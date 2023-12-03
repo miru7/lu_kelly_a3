@@ -8,14 +8,17 @@
         padding: 50px;
         margin: -10px;
       }
-      /*positioning text off-center: intro page*/
-      .introText {
-        margin-top: 5px;
-        margin-left: 380px;
-      }
+      
       a:link {
         color: white;
       }
+      a:visited {
+        color: purple;
+      }
+      a:hover {
+        color: gray;
+      }
+      
       /*right-side menu*/
       .menu {
         float: right;
@@ -27,9 +30,6 @@
       .right {
         text-align: right;
       }
-      h1 {
-        font-size: 100px; 
-      }
       h2 {
         color: white;
         font-size: 30px;
@@ -40,20 +40,48 @@
         color: white; 
         background-color: #323232;
       }
-      .pfp {
-        position: relative;
-        bottom: 690px;
-        left: 600px;
-      }
+  
       #section0, #section1, #section2, #section3, #section4 {
         height: 750px;  
       }
+      
       #section0 {
         background-color: #323232;
       }
-      #section1 {
-        background-color: #423711;
+      /*positioning text off-center: intro page*/
+      .introText {
+        font-size: 50px;
+        margin-top: 5px;
+        margin-left: 250px;
       }
+      .pfp {
+        float: right;
+        margin-right: 200px;
+        margin-top: -700px;
+      }
+      
+      #section1 {
+        background-color: white;
+      }
+      .rect1 {
+        float: left;
+        margin-top: 100px;
+        margin-left: -100px;
+        padding: 0;
+      }
+      .rect2 {
+        float: right;
+        margin-top: -100;
+      }
+      /*section text positioning*/
+      .top-left {
+        position: absolute;
+        top: 1000px;
+        left: 16px;
+        color: white;
+        font-size: 20px;
+      }
+      
       #section2 {
         background-color: #bbb5a7;
       }
@@ -80,32 +108,46 @@
             <td><a href="#section1">Visual Art</a></td>  
           </tr> 
           <tr>
-            <td><a href="#section1">Kelp Studio</a></td>
+            <td><a href="#section2">Kelp Studio</a></td>
           </tr>
           <tr>
-            <td><a href="#section1">3D Art</a></td>
+            <td><a href="#section3">3D Art</a></td>
           </tr>
           <tr>
-            <td><a href="#section1">Contact</a></td>
+            <td><a href="#section4">Contact</a></td>
           </tr>
           <tr> 
-            <td><a href="#section1">Back to top</a></td>
+            <td><a href="#section0">Back to top</a></td>
           </tr>
         </table> 
       </div>
 
+      <!--landing page-->
       <div class="introText" id="section0">
         <h1>Hello,<br>I'm<br><span style="color:#C15D5D;"><strong>Kelly Lu</strong></span></h1>
         <h2>(She/Her)<br>Multidisciplinary Artist &<br>Entrepreneur</h2>
-
         <div class="pfp">
           <img src="kelly.jpg" alt="Picture of Kelly" width="500px" height="auto">
         </div> 
       </div>
 
+      <!--first page (excluding landing page)-->
       <div id="section1">
-        Your amazing content goes here!
+        <div class="rect1">
+          <img src="rect.png" alt="Rectangle" width="500px" height="300px">
+          <div class="top-left">
+            <h1>The age old<br>question:</h1>
+            <h1><i>Where am I from?</i></h1>
+          </div>
+        </div>
+        <div class="rect2">
+          <img src="rect.png" alt="Rectangle" width="100px" height="600px">
+        </div>
+        <div class="rect2">
+          <img src="rect.png" alt="Rectangle" width="90px" height="300px">
+        </div>
       </div>
+      
       <div id="section2">
         Your amazing content goes here!
       </div>
