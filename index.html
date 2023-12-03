@@ -62,10 +62,23 @@
         float: right;
         margin-top: -100px;
       }
+      /*white rectangles in section 2*/
       .wRect1 {
         float: left;
         margin-left: -100px;
         margin-top: -100px;
+      }
+      .wRect2 {
+        float: right;
+        margin-top: 200px;
+        margin-right: -100px;
+      }
+      /*white line/rect on landing page*/
+      .wRect3 {
+        float: left;
+        padding: 0px;
+        top: 0px;
+        position: absolute;
       }
       
       #section0, #section1, #section2, #section3, #section4 {
@@ -119,7 +132,7 @@
         background-color: #323232;
       }
       #section3 {
-        background-color: #8b2e25;
+        background-color: white;
       }
       #section4 {
         background-color: #787254;
@@ -150,6 +163,9 @@
 
       <!--landing page-->
       <div id="section0">
+        <div class="wRect3">
+           <img src="rectW.png" alt="Rectangle" width="10px" height="1000px">
+        </div>
         <div class="introText">
           <h1>Hello,<br>I'm<br><span style="color:#C15D5D;"><strong>Kelly Lu</strong></span></h1>
           <h2>(She/Her)<br>Multidisciplinary Artist &<br>Entrepreneur</h2>
@@ -187,6 +203,9 @@
       <div id="section2">
         <div class="wRect1">
           <img src="rectW.png" alt="Rectangle" width="110px" height="400px">
+        </div>
+        <div class="wRect2">
+           <img src="rectW.png" alt="Rectangle" width="80px" height="700px">
         </div>
       </div>
       <div id="section3">
