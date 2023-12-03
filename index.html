@@ -12,9 +12,6 @@
         padding: 50px;
         margin: -10px;
       }
-      @media screen and (min-width: 110%) {
-        
-      }
       
       a:link {
         color: white;
@@ -52,6 +49,7 @@
         align-items: center;
         justify-content: center;
         display: grid;
+        padding: 0;
       }
       #section0, #section1, #section2, #section3, #section4 {
         height: 1000px;  
@@ -69,6 +67,8 @@
       }
       .pfp {
         float: right;
+        padding-top: 60px;
+        padding-left: 0;
       }
       
       #section1 {
@@ -82,20 +82,31 @@
       }
       .rect2 {
         float: right;
-        margin-top: -100;
+        margin-top: -100px;
       }
       /*section text positioning, top-left*/
       .question {
         position: absolute;
         float: left;
-        top: 1165px;
+        top: 1115px;
         color: white;
         font-size: 20px;
       }
-      .answer {
+      .ethnicity {
+        position: absolute;
         font-size: 40px;
-        color: black;
-        float: none;
+        color: #323232;
+        text-align: right;
+        padding-top: 500px;
+        padding-left: 500px;
+        line-height: 1.5;
+      }
+      .location {
+        position: absolute;
+        font-size: 40px;
+        line-height: 1.5;
+        color: #323232;
+        padding-top: 700px;
       }
       
       #section2 {
@@ -151,8 +162,13 @@
             <h1><i>Where am I from?</i></h1>
           </div>
         </div>
-        <div class="answer">
-          <p><b>I am a Cantonese, Vietnamese, and Canadian woman</b></p>
+        <div class="ethnicity">
+          <p><b>I am a Cantonese,<br>Vietnamese, and Canadian woman</b></p>
+        </div>
+        <div class="location">
+          <p>
+            <b>born &amp raised<br>in Toronto, Ontario</b>
+          </p>
         </div>
         <div class="rect2">
           <img src="rect.png" alt="Rectangle" width="100px" height="600px">
