@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-ca">
   <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Assignment 3: Personal Website Design and Implementation</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       div {
         padding: 50px;
         margin: -10px;
+      }
+      @media screen and (min-width: 110%) {
+        
       }
       
       a:link {
@@ -47,7 +54,7 @@
         display: grid;
       }
       #section0, #section1, #section2, #section3, #section4 {
-        height: 750px;  
+        height: 1000px;  
       }
       
       #section0 {
@@ -62,7 +69,6 @@
       }
       .pfp {
         float: right;
-        padding-right: 200px;
       }
       
       #section1 {
@@ -78,13 +84,18 @@
         float: right;
         margin-top: -100;
       }
-      /*section text positioning*/
-      .top-left {
+      /*section text positioning, top-left*/
+      .question {
         position: absolute;
         float: left;
-        top: 1010px;
+        top: 1165px;
         color: white;
         font-size: 20px;
+      }
+      .answer {
+        font-size: 40px;
+        color: black;
+        float: none;
       }
       
       #section2 {
@@ -134,11 +145,14 @@
       <!--first page (excluding landing page)-->
       <div id="section1">
         <div class="rect1">
-          <img src="rect.png" alt="Rectangle" width="500px" height="300px">
-          <div class="top-left">
+          <img src="rect.png" alt="Rectangle" width="550px" height="300px">
+          <div class="question">
             <h1>The age old<br>question:</h1>
             <h1><i>Where am I from?</i></h1>
           </div>
+        </div>
+        <div class="answer">
+          <p><b>I am a Cantonese, Vietnamese, and Canadian woman</b></p>
         </div>
         <div class="rect2">
           <img src="rect.png" alt="Rectangle" width="100px" height="600px">
