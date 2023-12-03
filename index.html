@@ -6,6 +6,19 @@
     <style>
       div {
         padding: 50px;
+        margin: -10px;
+      }
+      /*positioning text off-center: intro page*/
+      .offCenter {
+        margin-top: 30px;
+        margin-left: 380px;
+      }
+      a:link {
+        color: white;
+      }
+      .menu {
+        text-align: right;
+        float: right;
       }
       h1 {
         font-size: 100px; 
@@ -18,17 +31,18 @@
       body {
         font-family: Verdana;
         color: white; 
+        background-color: #323232;
       }
       div.relative {
         position: relative;
         bottom: 760px;
-        left: 700px;
+        left: 900px;
       }
       #section0, #section1, #section2, #section3, #section4 {
-        height: 700px;  
+        height: 780px;  
       }
       #section0 {
-        background-color: #BDCFA7;
+        background-color: #323232;
       }
       #section1 {
         background-color: #423711;
@@ -45,19 +59,34 @@
     </style>
   </head>
   <body>
-    <a href="#section1">0</a>
-    <a href="#section1">1</a>
-    <a href="#section1">2</a>
-    <a href="#section1">3</a>
-    <a href="#section1">4</a>  
-    <h2>One-page scroll site template</h2>
+    <div class="menu">
+      <table>
+        <tr>
+          <td><a href="#section1">Visual Art</a></td>  
+        </tr> 
+        <tr>
+          <td><a href="#section1">Kelp Studio</a></td>
+        </tr>
+        <tr>
+          <td><a href="#section1">3D Art</a></td>
+        </tr>
+        <tr>
+          <td><a href="#section1">Contact</a></td>
+        </tr>
+        <tr> 
+          <td><a href="#section1">Back to top</a></td>
+        </tr>
+      </table> 
+    </div>
     
-    <div id="section0">
+    <div class="offCenter" id="section0">
       <h1>Hello,<br>I'm<br><span style="color:#C15D5D;">Kelly Lu</span></h1>
       <h2>(She/Her)<br>Multidisciplinary Artist &<br>Entrepreneur</h2>
+      <!--
       <div class="relative">
-        <img src="kelly.jpg" alt="Picture of Kelly" style="width:600px;height:auto">
-      </div>
+        <img src="kelly.jpg" alt="Picture of Kelly" width="500px" height="auto">
+      </div> 
+-->
     </div>
     
     <div id="section1">
