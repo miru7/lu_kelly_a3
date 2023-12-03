@@ -40,7 +40,12 @@
         color: white; 
         background-color: #323232;
       }
-  
+      /*making sure everything is centered*/
+      .container {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+      }
       #section0, #section1, #section2, #section3, #section4 {
         height: 750px;  
       }
@@ -51,13 +56,13 @@
       /*positioning text off-center: intro page*/
       .introText {
         font-size: 50px;
-        margin-top: 5px;
-        margin-left: 250px;
+        float: left;
+        padding-left: 200px;
+        padding-right: 300px;
       }
       .pfp {
         float: right;
-        margin-right: 200px;
-        margin-top: -700px;
+        padding-right: 200px;
       }
       
       #section1 {
@@ -76,8 +81,8 @@
       /*section text positioning*/
       .top-left {
         position: absolute;
-        top: 1000px;
-        left: 16px;
+        float: left;
+        top: 1010px;
         color: white;
         font-size: 20px;
       }
@@ -91,13 +96,6 @@
       #section4 {
         background-color: #787254;
       }
-    
-      /*making sure everything is centered*/
-      .container {
-        align-items: center;
-        justify-content: center;
-      }
-      
     </style>
   </head>
   <body>
@@ -123,9 +121,11 @@
       </div>
 
       <!--landing page-->
-      <div class="introText" id="section0">
-        <h1>Hello,<br>I'm<br><span style="color:#C15D5D;"><strong>Kelly Lu</strong></span></h1>
-        <h2>(She/Her)<br>Multidisciplinary Artist &<br>Entrepreneur</h2>
+      <div id="section0">
+        <div class="introText">
+          <h1>Hello,<br>I'm<br><span style="color:#C15D5D;"><strong>Kelly Lu</strong></span></h1>
+          <h2>(She/Her)<br>Multidisciplinary Artist &<br>Entrepreneur</h2>
+        </div>
         <div class="pfp">
           <img src="kelly.jpg" alt="Picture of Kelly" width="500px" height="auto">
         </div> 
