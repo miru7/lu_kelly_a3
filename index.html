@@ -51,10 +51,26 @@
         display: grid;
         padding: 0;
       }
+      /*rectangles on the sides of the screen*/
+      .bRect1 {
+        float: left;
+        margin-top: 100px;
+        margin-left: -100px;
+        padding: 0;
+      }
+      .bRect2 {
+        float: right;
+        margin-top: -100px;
+      }
+      .wRect1 {
+        float: left;
+        margin-left: -100px;
+        margin-top: -100px;
+      }
+      
       #section0, #section1, #section2, #section3, #section4 {
         height: 1000px;  
       }
-      
       #section0 {
         background-color: #323232;
       }
@@ -73,16 +89,6 @@
       
       #section1 {
         background-color: white;
-      }
-      .bRect1 {
-        float: left;
-        margin-top: 100px;
-        margin-left: -100px;
-        padding: 0;
-      }
-      .bRect2 {
-        float: right;
-        margin-top: -100px;
       }
       /*section text positioning, top-left*/
       .question {
@@ -110,7 +116,7 @@
       }
       
       #section2 {
-        background-color: #bbb5a7;
+        background-color: #323232;
       }
       #section3 {
         background-color: #8b2e25;
@@ -179,7 +185,9 @@
       </div>
       
       <div id="section2">
-        Your amazing content goes here!
+        <div class="wRect1">
+          <img src="rectW.png" alt="Rectangle" width="110px" height="400px">
+        </div>
       </div>
       <div id="section3">
         Your amazing content goes here!
