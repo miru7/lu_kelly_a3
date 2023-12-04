@@ -211,7 +211,11 @@
         right: 280px;
         margin-top: 330px;
       }
-      .mySlides {display: none;}
+      .mySlides {
+        display: none;
+        margin-left: 44px;
+        border-radius: 10%;
+      }
     </style>
   </head>
   <body>
@@ -312,11 +316,20 @@
           </div>
           <p class="visualArt"><b><span style="color:#323232;">Visual</span><br>Arts</b></p>
         </div>
+        
+        <!--
+        Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
+        Author: w3schools.com
+        Name: Automatic Slideshow
+        Description: Displays an animated slideshow.
+        Date retrieved: Dec. 4, 2023
+				-->
+        <!-- Copied code starts -->
         <div class="w3-content w3-display-container">
-          <img class="mySlides" src="jisoo.jpg" alt="jisoo home sweet home drawing" style="width:400px; height:auto">
-          <img class="mySlides" src="bhc.png" alt="black history month drawing" style="width:400px; height:auto">
-          <img class="mySlides" src="wine.png" alt="girl and wine drawing" style="width:400px; height:auto">
-          <img class="mySlides" src="paint.png" alt="action painting" style="width:400px; height:auto">
+          <img class="mySlides" src="jisoo.jpg" alt="jisoo home sweet home drawing" style="width:500px; height:auto">
+          <img class="mySlides" src="bhc.png" alt="black history month drawing" style="width:500px; height:auto">
+          <img class="mySlides" src="wine.png" alt="girl and wine drawing" style="width:500px; height:auto">
+          <img class="mySlides" src="paint.png" alt="action painting" style="width:500px; height:auto">
         </div>
         <script>
           let myIndex = 0;
@@ -333,6 +346,7 @@
           }
           carousel();
         </script>
+        <!-- Copied code ends -->
       </div>
     </div>
   </body>
