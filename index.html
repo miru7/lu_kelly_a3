@@ -26,14 +26,11 @@
       /*right-side menu*/
       .menu {
         float: right;
+        text-align: right;
         margin-top: 600px;
         position: fixed;
-        right: 0;
       }
-      /*aligns text to the right*/
-      .right {
-        text-align: right;
-      }
+
       h2 {
         color: white;
         font-size: 30px;
@@ -50,6 +47,14 @@
         justify-content: center;
         display: grid;
         padding: 0;
+      }
+      table {
+        position: fixed;
+        color: black;
+        float: right;
+        text-align: right;
+        bottom: 55px;
+        right: 30px;
       }
       /*rectangles on the sides of the screen*/
       .bRect1 {
@@ -73,13 +78,21 @@
         margin-top: 200px;
         margin-right: -100px;
       }
-      /*white line/rect on landing page*/
+      /*white lines on landing page*/
       .wRect3 {
         float: left;
         padding: 0px;
-        top: 0px;
-        position: absolute;
+        top: 150px;
+        left: -40px;
+        position: relative;
       }
+      .wRect4 {
+        float: left;
+        padding: 0px;
+        top: -110px;
+        left: 80px;
+        position: relative;
+      }  
       
       #section0, #section1, #section2, #section3, #section4 {
         height: 1000px;  
@@ -93,11 +106,12 @@
         float: left;
         padding-left: 200px;
         padding-right: 300px;
+        padding-top: 0px;
       }
       .pfp {
         float: right;
-        padding-top: 60px;
-        padding-left: 0;
+        padding-top: 0px;
+        padding-left: 0px;
       }
       
       #section1 {
@@ -107,7 +121,7 @@
       .question {
         position: absolute;
         float: left;
-        top: 1115px;
+        top: 1200px;
         color: white;
         font-size: 20px;
       }
@@ -141,8 +155,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="menu">
-        <table class="right">
+      <div>
+        <table>
           <tr>
             <td><a href="#section1">Visual Art</a></td>  
           </tr> 
@@ -164,7 +178,10 @@
       <!--landing page-->
       <div id="section0">
         <div class="wRect3">
-           <img src="rectW.png" alt="Rectangle" width="10px" height="1000px">
+          <img src="rectW.png" alt="Rectangle" width="10px" height="800px">
+        </div>
+        <div class="wRect4">
+          <img src="rectW.png" alt="Rectangle" width="10px" height="800px">
         </div>
         <div class="introText">
           <h1>Hello,<br>I'm<br><span style="color:#C15D5D;"><strong>Kelly Lu</strong></span></h1>
