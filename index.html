@@ -14,7 +14,7 @@
       }
       
       a:link {
-        color: pink;
+        color: white;
       }
       a:visited {
         color: purple;
@@ -49,6 +49,7 @@
         right: 15px;
         font-size: 14px;
       }
+      
       /*black rectangles in section 1*/
       .bRect1 {
         float: left;
@@ -214,7 +215,16 @@
       .mySlides {
         display: none;
         margin-left: 44px;
+        margin-right: 0px;
         border-radius: 10%;
+      }
+      .video {
+        float: right;
+        margin-left: 80px;
+      }
+      div.row3 {
+        float: none;
+        display: flex;
       }
     </style>
   </head>
@@ -316,7 +326,17 @@
           </div>
           <p class="visualArt"><b><span style="color:#323232;">Visual</span><br>Arts</b></p>
         </div>
-        
+        <!--displays/holds slideshow pictures + process video next to it-->
+        <div class="row3">
+          <img class="mySlides" src="jisoo.jpg" alt="jisoo home sweet home drawing" style="width:500px; height:370px">
+          <img class="mySlides" src="bhc.png" alt="black history month drawing" style="width:500px; height:370px">
+          <img class="mySlides" src="wine.png" alt="girl and wine drawing" style="width:500px; height:370px">
+          <img class="mySlides" src="paint.png" alt="action painting" style="width:500px; height:370px">
+          <img class="mySlides" src="Spiderverse.png" alt="spiderverse drawing" style="width:500px; height:370px">
+          <video class="video" width="500px" height="auto" controls loop autoplay>
+            <source src="process.mp4" type="video/mp4">
+          </video>
+        </div>
         <!--
         Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
         Author: w3schools.com
@@ -325,12 +345,6 @@
         Date retrieved: Dec. 4, 2023
 				-->
         <!-- Copied code starts -->
-        <div class="w3-content w3-display-container">
-          <img class="mySlides" src="jisoo.jpg" alt="jisoo home sweet home drawing" style="width:500px; height:auto">
-          <img class="mySlides" src="bhc.png" alt="black history month drawing" style="width:500px; height:auto">
-          <img class="mySlides" src="wine.png" alt="girl and wine drawing" style="width:500px; height:auto">
-          <img class="mySlides" src="paint.png" alt="action painting" style="width:500px; height:auto">
-        </div>
         <script>
           let myIndex = 0;
           function carousel() {
