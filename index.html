@@ -22,14 +22,6 @@
       a:hover {
         color: gray;
       }
-      
-      /*right-side menu*/
-      .menu {
-        float: right;
-        text-align: right;
-        margin-top: 600px;
-        position: fixed;
-      }
 
       h2 {
         color: white;
@@ -47,6 +39,7 @@
         justify-content: center;
         display: grid;
         padding: 0;
+        overflow: none;
       }
       table {
         position: fixed;
@@ -164,13 +157,19 @@
         right: 0px;
       }
       .textOutline {
-        font-size: 150px;
+        font-size: 160px;
         color: transparent;
         -webkit-text-stroke: white;
         -webkit-text-stroke-width: 0.5px;
         text-align: center;
-        align-content: stretch;
+        text-stroke: white;
+        text-outline: white;
       }
+      <script>
+      const ctx = canvas.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Hello World",10,50);
+      </script>
       
       #section3 {
         background-color: white;
