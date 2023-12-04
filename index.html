@@ -159,18 +159,21 @@
       .textOutline {
         font-size: 160px;
         color: transparent;
-        -webkit-text-stroke: white;
-        -webkit-text-stroke-width: 0.5px;
         text-align: center;
-        text-stroke: white;
-        text-outline: white;
+        
+        /*Code copied from: https://css-tricks.com/adding-stroke-to-web-text/
+        Author: Chris Coyier
+        Name: Adding Stroke to Web Text
+        Description: Removing the fill of text and leaving an outline
+        Date Retrieved: Dec. 3, 2023
+        */
+        
+        /*Copied code starts*/
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke: white;
+        /*Copied code ends*/
       }
-      <script>
-      const ctx = canvas.getContext("2d");
-      ctx.font = "30px Arial";
-      ctx.strokeText("Hello World",10,50);
-      </script>
-      
+    
       #section3 {
         background-color: white;
       }
