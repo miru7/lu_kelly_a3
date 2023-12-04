@@ -192,10 +192,24 @@
       div.column {
         float: left;
       }
+      /* column for first row of visual art images */
+      div.column2 {
+        float: left;
+        margin-top: -120px;
+      }
       
       /*page 4*/
       #section4 {
         background-color: #323232;
+      }
+      .visualArt {
+        position: absolute;
+        text-align: right;
+        float: right;
+        color: pink;
+        font-size: 80px;
+        right: 370px;
+        margin-top: 330px;
       }
     </style>
   </head>
@@ -272,22 +286,29 @@
         <p class="text3">Or I guess you could keep scrolling</p>
         <div class="row">
           <div class="column">
-            <img src="red.png" alt="drawing of girl in black, white, and red" style="border-radius:10%" width="auto" height="551.5px">
+            <img src="red.png" alt="drawing of girl in black, white, and red" style="border-radius:10%;" width="auto" height="551.5px">
           </div>
           <div class="column">
-            <img src="nature.png" alt="drawing of woman with flowers, white, and red" style="border-radius:10%" width="auto" height="551.5px">
+            <img src="nature.png" alt="drawing of woman with flowers, white, and red" style="border-radius:10%;" width="auto" height="551.5px">
           </div>
           <div class="column">
-            <img src="ai.png" alt="drawing of an anime pop star" style="border-radius:10%" width="auto" height="551.5px">
+            <img src="ai.png" alt="drawing of an anime pop star" style="border-radius:10%;" width="auto" height="551.5px">
           </div>
         </div>
       </div>
       
       <!--section 4/4th page (excluding landing page)-->
       <div id="section4">
-          <div class="column">
-            <img src="spring.png" alt="cherry blossom girl drawing" style="border-radius:10%" width="auto" height="551.5px">
+          <div class="column2">
+            <img src="spring.png" alt="cherry blossom girl drawing" style="border-radius:10%;" width="auto" height="500px">
           </div>
+          <div class="column2">
+            <img src="ahri.png" alt="star guardian ahri drawing" style="border-radius:10%;" width="auto" height="500px">
+          </div>
+          <div class="column2">
+            <img src="pinkSquare.png" alt="pink square" style="border-radius:10%;" width="420px" height="500px">
+          </div>
+        <p class="visualArt"><b><span style="color:#323232;">Visual</span><br>Arts</b></p>
       </div>
     </div>
   </body>
