@@ -8,23 +8,6 @@
       * {
         box-sizing: border-box;
       }
-      /*
-      .topnav {
-        background-color: #323232;
-        padding: 30px;
-        margin: -100px;
-        margin-bottom: 10px;
-        float: left;
-      }
-      .topnav a {
-        float: left;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-        font-size: 17px;
-        padding-bottom: 0px;
-      }
-      */
       .overlay {
         height: 0%;
         width: 100%;
@@ -50,6 +33,11 @@
         color: #818181;
         display: block;
         transition: 0.3s;
+      }
+      /* Positioning close button (top left corner) */
+      .closebtn {
+        position: fixed;
+        font-size: 60px;
       }
       
       div {
@@ -662,16 +650,9 @@
             <li><a href="#section0">Back to top</a></li>
           </ul>
       </div>
-      <!--top navigation bar
-      <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
-      -->
-      <span style="font-size:20px;cursor:pointer" onclick="openNav()">Menu&times;</span>
+      <!--full screen navigation overlay-->
       <div id="myNav" class="overlay">
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()">Menu</span>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#">About</a>
@@ -682,7 +663,7 @@
       </div>
       <script>
         function openNav() {
-          document.getElementById("myNav").style.height = "100%";
+          document.getElementById("myNav").style.height = "120%";
         }
         function closeNav() {
           document.getElementById("myNav").style.height = "0%";
