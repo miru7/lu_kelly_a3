@@ -273,13 +273,16 @@
 
       .hide {
         display: none;
+        float: right;
       }
-      .heading1:hover + .hide {
+      .heading:hover + .hide {
         display: block;
-        color: red;
+        opacity: 1.0;
+      }
+      .heading {
         float: right;
         font-size: 75px;
-        opacity: 0.3
+        opacity: 0.3;        
       }
       
       /*page 6*/
@@ -437,7 +440,10 @@
           <h2 class="subtitle5">my small business<br>selling handmade goods</h2>
         </div>
         <div>
-          <h3 class="heading1">Keychains</h3>
+          <h3 class="heading">Keychains</h3>
+          <h3 class="hide">
+            test
+          </h3>
         </div>
       </div>
     </div>
