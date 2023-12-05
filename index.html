@@ -8,6 +8,15 @@
       * {
         box-sizing: border-box;
       }
+      
+      /*
+      Code copied from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+      Author: w3schools.com
+      Name: How TO - Full screen Overlay Navigation
+      Description: Creates a full screen overlay after clicking a button
+      Date retrieved: Dec. 5, 2023
+			*/
+      /* Copied code starts */
       .overlay {
         height: 0%;
         width: 100%;
@@ -30,10 +39,11 @@
         padding: 8px;
         text-decoration: none;
         font-size: 36px;
-        color: #818181;
+        color: white;
         display: block;
         transition: 0.3s;
       }
+      /* Copied code ends */
       /* Positioning close button (top left corner) */
       .closebtn {
         position: fixed;
@@ -46,7 +56,6 @@
         padding: 50px;
         margin: -10px;
       }
-      
       /*for clickable links*/
       a:link {
         color: white;
@@ -57,7 +66,6 @@
       a:hover {
         color: pink;
       }
-
       h2 {
         color: white;
         font-size: 30px;
@@ -657,12 +665,21 @@
         <span style="font-size:20px;cursor:pointer" onclick="openNav()">Menu</span>
         <a href="javascript:void(0)" class="closebtn" style="display:none;" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          <a href="#section3">Visual Art</a>
+          <a href="#section5">Kelp Studio</a>
+          <a href="#section7">3D Art</a>
+          <a href="https://kelpstudio.myportfolio.com/" target="_blank">Full Portfolio</a>
+          <a href="#section8">Contact</a>
         </div>
       </div>
+      <!--
+      Code copied from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+      Author: w3schools.com
+      Name: How TO - Full screen Overlay Navigation
+      Description: Creates a full screen overlay after clicking a button
+      Date retrieved: Dec. 5, 2023
+			-->
+      <!-- Copied code starts -->
       <script>
         function openNav() {
           document.getElementById("myNav").style.height = "120%";
@@ -673,6 +690,7 @@
           document.querySelector('.closebtn').style.display = 'none';
         }
       </script>
+       <!-- Copied code ends -->
       
       <!--landing page-->
       <div id="section0">
