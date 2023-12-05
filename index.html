@@ -77,7 +77,7 @@
         position: relative;
       } 
       
-      #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7 {
+      #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {
         height: 1000px;  
       }
       
@@ -94,7 +94,7 @@
         padding-top: 0px;
       }
       
-      /*page 1*/
+      /*page 1, background info*/
       #section1 {
         background-color: pink;
       }
@@ -160,7 +160,7 @@
         bottom: 700px;
       }
       
-      /*page 2*/
+      /*page 2, picking prompt*/
       #section2 {
         background-color: #323232;
       }
@@ -207,7 +207,7 @@
         color: pink;
       }
   
-      /*page 3*/
+      /*page 3, visual arts*/
       #section3 {
         background-color: #323232;
       }
@@ -227,7 +227,7 @@
         margin-top: -120px;
       }
       
-      /*page 4*/
+      /*page 4, visual arts pg2*/
       #section4 {
         background-color: #323232;
       }
@@ -270,7 +270,7 @@
         position: absolute;
       }
       
-      /*page 5*/
+      /*page 5, kelp studio*/
       #section5 {
         background-color: pink;
         margin: 100px;
@@ -334,19 +334,19 @@
         opacity: 1.0;
       }
       
-      /*page 6*/
+      /*page 6, kelp studip pg2*/
       #section6 {
         background-color: #323232;
         height: 830px;
       }
-      /*longer pink line on 6th page (visual arts)*/
+      /*longer pink line on 6th page*/
       .pRect4 {
         float: left;
         margin-left: 180px;
         margin-top: -200px;
         position: absolute;
       }
-      /* shorter pink line on 6th page (visual arts)*/
+      /* shorter pink line on 6th page*/
       .pRect5 {
         float: left;
         margin-left: 10px;
@@ -399,7 +399,7 @@
         margin-top: 220px;
       }
       
-      /*page 6*/
+      /*page 7, 3D art*/
       #section7 {
         background-color: pink;
       }
@@ -411,14 +411,34 @@
         margin-right: 200px;
         margin-top: 400px;
       }
-      /* right verticle pink line on 7th page (3D art)*/
+      .subtitle {
+        opacity: 0.3;
+        float: right;
+        text-align: center;
+        font-size: 40px;
+        line-height: 1.5;
+        margin-left: 950px;
+        margin-top: -100px;
+        position: absolute;
+      }
+      .description {
+        opacity: 0.3;
+        float: right;
+        text-align: center;
+        font-size: 40px;
+        line-height: 1.5;
+        margin-left: 990px;
+        margin-top: 280px;
+        position: absolute;       
+      }
+      /* right verticle pink line on 7th page*/
       .pRect6 {
         float: right;
         margin-left: 1575px;
         margin-top: -280px;
         position: absolute;
       }
-      /* right horizontal pink line on 7th page (3D art)*/
+      /* right horizontal pink line on 7th page*/
       .pRect7 {
         float: right;
         margin-left: 1430px;
@@ -432,30 +452,41 @@
         margin-top: -280px;
         position: absolute;
       }
-      /* left horizontal pink line on 7th page (3D art)*/
+      /* left horizontal pink line on 7th page*/
       .pRect9 {
         float: left;
         margin-left: -280px;
         margin-top: -100px;
         position: absolute;
       }
-      .3dImages {
-        position: absolute;
+      /* top black line on 7th page*/
+      .bRect3 {
+        float: right;
+        margin-top: -330px;
+        margin-right: -200px;
       }
       .donut {
         position: absolute;
         float: left;
         margin-top: -45px;
+        margin-left: 200px;
       }
       .coffee {
         position: absolute;
         float: left;
         margin-top: 176px;
+        margin-left: 200px;
       }
       .water {
         position: absolute;
         float: left;
         margin-top: 400px;
+        margin-left: 200px;
+      }
+      
+      /*page 8, contact page*/
+      #section8 {
+        background-color: #323232;
       }
     </style>
   </head>
@@ -678,6 +709,17 @@
         <div>
           <img class="water" src="water.png" alt="3d glass of water" style="width:520px; height:auto">
         </div>
+        <div class="subtitle">
+          <b>starting from the<br>legendary blender donut</b>
+        </div>
+        <div class="description">
+          <b>a hobby I started<br>during the pandemic</b>
+        </div>
+        <img class="bRect3" src="rect.png" alt="Rectangle" width="60px" height="200px">
+      </div>
+      
+      <div id="section8">
+        
       </div>
       
     </div>
