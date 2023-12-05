@@ -256,6 +256,31 @@
         background-color: pink;
         margin: 100px;
       }
+      .title5 {
+        float: left;
+        font-size: 100px;
+        color: #323232;
+        margin-top: 10px;
+        line-height: 1.4;
+      }
+      .subtitle5 {
+        float: left;
+        font-size: 50px;
+        color: #323232;
+        margin-top: 250px;
+        margin-left: -360px;
+      }
+
+      .hide {
+        display: none;
+      }
+      .heading1:hover + .hide {
+        display: block;
+        color: red;
+        float: right;
+        font-size: 75px;
+        opacity: 0.3
+      }
       
       /*page 6*/
       #section6 {
@@ -401,11 +426,19 @@
           carousel();
         </script>
         <!-- Copied code ends -->
-        
-      <!--section 5/5th page (excluding landing page)-->
       </div>
       
+      <!--section 5/5th page (excluding landing page)-->
       <div id="section5"> 
+        <div>
+          <h1 class="title5">Kelp<br>Studio</h1>
+        </div>
+        <div>
+          <h2 class="subtitle5">my small business<br>selling handmade goods</h2>
+        </div>
+        <div>
+          <h3 class="heading1">Keychains</h3>
+        </div>
       </div>
     </div>
   </body>
