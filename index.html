@@ -363,12 +363,16 @@
         font-size: 50px;
         line-height: 1.5;
         float: left;
-        opacity: 0.4;
+        opacity: 0.2;
         margin-top: 400px;
       }
       .logo {
         float: left;
-        border-radius: 60%;
+        border-radius: 10%;
+        position: absolute;
+        margin-top: -280px;
+        opacity: 0.3;
+        margin-left: -40px;
       }
       .button {
         color: white;
@@ -380,10 +384,16 @@
         padding: 15px 32px;
         text-align: center;
         font-size: 30px;
+        border-radius: 3%;
       }
       .button:hover {
         background-color: pink;
         color: #323232;
+      }
+      .buttonPos {
+        float: left;
+        margin-left: -495px;
+        margin-top: 220px;
       }
     </style>
   </head>
@@ -572,7 +582,12 @@
         <div>
           <h1 class="fyi">For Information</h1>
         </div>
-        <button class="button">Click Here</button>
+        <div class="buttonPos">
+          <button class="button">Click Here</button>
+        </div>
+        <div>
+          <img class="logo" src="logoOutline.png" alt="kelp studio logo" width="600px" height="auto">
+        </div>
       </div>
       
     </div>
