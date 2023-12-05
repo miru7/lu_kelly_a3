@@ -77,7 +77,7 @@
         position: relative;
       } 
       
-      #section0, #section1, #section2, #section3, #section4, #section5 {
+      #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7 {
         height: 1000px;  
       }
       
@@ -337,6 +337,7 @@
       /*page 6*/
       #section6 {
         background-color: #323232;
+        height: 830px;
       }
       /*longer pink line on 6th page (visual arts)*/
       .pRect4 {
@@ -357,14 +358,15 @@
         text-align: right;
         font-size: 65px;
         line-height: 1.5;
-        margin-top: -60px;
+        margin-top: -10px;
       }
       .fyi {
         font-size: 50px;
         line-height: 1.5;
         float: left;
         opacity: 0.7;
-        margin-top: 400px;
+        margin-top: 470px;
+        margin-left: 60px;
       }
       .logo {
         float: left;
@@ -372,7 +374,7 @@
         position: absolute;
         margin-top: -280px;
         opacity: 0.3;
-        margin-left: -40px;
+        margin-left: -100px;
       }
       .button {
         color: white;
@@ -385,6 +387,7 @@
         text-align: center;
         font-size: 30px;
         border-radius: 3%;
+        margin-top: 60px;
       }
       .button:hover {
         background-color: pink;
@@ -394,6 +397,43 @@
         float: left;
         margin-left: -495px;
         margin-top: 220px;
+      }
+      
+      /*page 6*/
+      #section7 {
+        background-color: pink;
+      }
+      /* right verticle pink line on 7th page (3D art)*/
+      .pRect6 {
+        float: right;
+        margin-left: 1575px;
+        margin-top: -280px;
+        position: absolute;
+      }
+      /* right horizontal pink line on 7th page (3D art)*/
+      .pRect7 {
+        float: right;
+        margin-left: 1430px;
+        margin-top: -100px;
+        position: absolute;
+      }
+      /* left verticle pink line on 7th page (3D art)*/
+      .pRect8 {
+        float: left;
+        margin-left: -100px;
+        margin-top: -280px;
+        position: absolute;
+      }
+      /* left horizontal pink line on 7th page (3D art)*/
+      .pRect9 {
+        float: left;
+        margin-left: -280px;
+        margin-top: -100px;
+        position: absolute;
+      }
+      .3dImages {
+        position: absolute;
+        margin-top: 500px;
       }
     </style>
   </head>
@@ -589,6 +629,31 @@
         </div>
         <div>
           <img class="logo" src="logoWhite.png" alt="kelp studio logo" width="600px" height="auto">
+        </div>
+      </div>
+      
+      <!--section 7/7th page (excluding landing page)-->
+      <div id="section7">
+        <div class="pRect6">
+          <img src="pinkSquare.png" alt="Pink rectangle" width="60px" height="400px">
+        </div>
+        <div class="pRect7">
+          <img src="pinkSquare.png" alt="Pink rectangle" width="400px" height="60px">
+        </div>
+        <div class="pRect8">
+          <img src="pinkSquare.png" alt="Pink rectangle" width="60px" height="400px">
+        </div>
+        <div class="pRect9">
+          <img src="pinkSquare.png" alt="Pink rectangle" width="400px" height="60px">
+        </div>
+        <div>
+          <img class="3dImages" src="donut.png" alt="3d donut" style="width:520px; height:auto">
+        </div>
+        <div>
+          <img class="3dImages" src="coffee.png" alt="3d glass of coffee" style="width:520px; height:auto">
+        </div>
+        <div>
+          <img class="3dImages" src="water.png" alt="3d glass of water" style="width:520px; height:auto">
         </div>
       </div>
       
