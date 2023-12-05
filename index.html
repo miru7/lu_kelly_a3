@@ -13,7 +13,7 @@
         width: 100%;
         position: fixed;
         z-index: 1;
-        top: 0;
+        top: -10px;
         left: 0;
         background-color: rgba(0,0,0, 0.9);
         overflow-y: hidden;
@@ -37,7 +37,9 @@
       /* Positioning close button (top left corner) */
       .closebtn {
         position: fixed;
+        display: none;
         font-size: 60px;
+        z-index: 2;
       }
       
       div {
@@ -653,7 +655,7 @@
       <!--full screen navigation overlay-->
       <div id="myNav" class="overlay">
         <span style="font-size:20px;cursor:pointer" onclick="openNav()">Menu</span>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" style="display:none;" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#">About</a>
           <a href="#">Services</a>
@@ -664,9 +666,11 @@
       <script>
         function openNav() {
           document.getElementById("myNav").style.height = "120%";
+          document.querySelector('.closebtn').style.display = 'block';
         }
         function closeNav() {
           document.getElementById("myNav").style.height = "0%";
+          document.querySelector('.closebtn').style.display = 'none';
         }
       </script>
       
