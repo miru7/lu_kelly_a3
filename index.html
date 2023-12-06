@@ -8,13 +8,26 @@
       * {
         box-sizing: border-box;
       }
+      /*for clickable links*/
+      a:link {
+        color: white;
+      }
+      a:visited {
+        color: gray;
+      }
+      a:hover {
+        color: pink;
+      }
+      a:active {
+        color: #AA5656;
+      }
       table {
         position: relative;
-        float: right;       
+        float: right;      
+        color: #868585;
       }
       th {
-        padding-left: 30px;
-        color: #868585; 
+        padding-left: 30px; 
       }
       /*
       Code copied from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
@@ -62,16 +75,6 @@
       div {
         padding: 50px;
         margin: -10px;
-      }
-      /*for clickable links*/
-      a:link {
-        color: white;
-      }
-      a:visited {
-        color: #AA5656;
-      }
-      a:hover {
-        color: pink;
       }
       h2 {
         color: white;
@@ -688,19 +691,15 @@
       <div id="myNav" class="overlay">
         <span style="font-size:20px;cursor:pointer" onclick="openNav()">Menu</span>
         <table>
-          <th>
-            <a href="https://www.instagram.com/kelpstudio_/" target="_blank">Instagram</a>
-          </th>
-          <th>
-            <a href="https://www.linkedin.com/in/kelly-lu-/">LinkedIn</a>
-          </th>
+          <th>Copyright</th>
+          <th>Kelly Lu</th>
         </table>
         <a href="javascript:void(0)" class="closebtn" style="display:none;" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#section3">Visual Art</a>
           <a href="#section5">Kelp Studio</a>
-          <a href="#section7">3D Art</a>
-          <a href="#section8">Contact</a>
+          <a href="https://www.linkedin.com/in/kelly-lu-/" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/kelpstudio_/" target="_blank">Instagram</a>
         </div>
       </div>
       <!--
