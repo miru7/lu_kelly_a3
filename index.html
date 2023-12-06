@@ -8,26 +8,14 @@
       * {
         box-sizing: border-box;
       }
-      /*for clickable links*/
-      a:link {
-        color: white;
-      }
-      a:visited {
-        color: gray;
-      }
-      a:hover {
-        color: pink;
-      }
-      a:active {
-        color: #AA5656;
-      }
       table {
         position: relative;
         float: right;      
         color: #868585;
+        font-size: 13px;
       }
       th {
-        padding-left: 30px; 
+        padding-left: 10px; 
       }
       /*
       Code copied from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
@@ -72,6 +60,19 @@
         z-index: 2;
       }
       
+      /*for clickable links*/
+      a:link {
+        color: white;
+      }
+      a:visited {
+        color: white;
+      }
+      a:hover {
+        color: pink;
+      }
+      a:active {
+        color: #AA5656;
+      }
       div {
         padding: 50px;
         margin: -10px;
@@ -691,7 +692,7 @@
       <div id="myNav" class="overlay">
         <span style="font-size:20px;cursor:pointer" onclick="openNav()">Menu</span>
         <table>
-          <th>Copyright</th>
+          <th>Last Updated: Dec 2023 |</th>
           <th>Kelly Lu</th>
         </table>
         <a href="javascript:void(0)" class="closebtn" style="display:none;" onclick="closeNav()">&times;</a>
