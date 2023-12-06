@@ -685,13 +685,15 @@
         margin-top: -600px;
         margin-left: 720px;
       }
+      /*Drawing of Ahri at end page*/
       .endDrawing {
         position: absolute;
         float: right;
         margin-left: 900px;
         margin-top: -910px;
       }
-      .midDrawing {
+      /*Drawing of Violet Evergarden near bottom of Pick Your Poison text*/
+      .greenDrawing {
         float: right;
         position: absolute;
         margin-left: 1100px;
@@ -724,6 +726,7 @@
           <th>Kelly Lu</th>
         </table>
         <a href="javascript:void(0)" class="closebtn" style="display:none;" onclick="closeNav()">&times;</a>
+        <!--links/categories in menu overlay-->
         <div class="overlay-content">
           <a href="https://kelpstudio.carrd.co/" target="_blank">Kelp Studio</a>
           <a href="https://kelpstudio.myportfolio.com/" target="_blank">Full Portfolio</a>
@@ -740,10 +743,12 @@
 			-->
       <!-- Copied code starts -->
       <script>
+        <!--Opens fullscreen overlay after clicking on menu-->
         function openNav() {
           document.getElementById("myNav").style.height = "120%";
           document.querySelector('.closebtn').style.display = 'block';
         }
+        <!--Closes overlay after clicking on the 'X'-->
         function closeNav() {
           document.getElementById("myNav").style.height = "0%";
           document.querySelector('.closebtn').style.display = 'none';
@@ -803,7 +808,7 @@
         <p class="textFill">PICK YOUR POISON</p>
         <p class="textOutline2">PICK YOUR POISON</p>
         </div>
-        <img class="midDrawing" src="violet.png" alt="violet evergarden drawing" width="800px" height="auto">
+        <img class="greenDrawing" src="violet.png" alt="violet evergarden drawing" width="800px" height="auto">
       </div>
       
       <!--section 3/3rd page (excluding landing page)-->
@@ -888,6 +893,7 @@
         <div>
           <h2 class="subtitle5">my small business<br>selling handmade goods</h2>
         </div>
+        <!--Hovering over each category heading shows a different image-->
         <div>
           <h3 class="heading" id="highlight">♡ Keychains</h3>
           <img class="hide" src="knife.JPG" alt="keychain" style="width:400px; height:auto">
@@ -919,6 +925,7 @@
         <div>
           <h1 class="fyi">For Information</h1>
         </div>
+        <!--Leads to Kelp Studio information site-->
         <div class="buttonPos">
           <a href="https://kelpstudio.carrd.co/" target="_blank">
             <button class="button">Click Here</button>
@@ -932,6 +939,7 @@
       <!--section 7/7th page (excluding landing page)-->
       <div id="section7">
         <h1 class="title7">3D Art</h1>
+        <!--Pink lines/squares on the top of the page-->
         <div class="pRect6">
           <img src="pinkSquare.png" alt="Pink rectangle" width="60px" height="400px">
         </div>
@@ -944,6 +952,7 @@
         <div class="pRect9">
           <img src="pinkSquare.png" alt="Pink rectangle" width="400px" height="60px">
         </div>
+        <!--Images of 3D work-->
         <div>
           <img class="donut" src="donut.png" alt="3d donut" style="width:520px; height:auto">
         </div>
@@ -959,6 +968,7 @@
         <div class="description">
           <b>a hobby I started<br>during the pandemic</b>
         </div>
+        <!--Black rectangles on top and bottom of page title-->
         <img class="bRect3" src="blackrect.png" alt="Rectangle" width="60px" height="200px">
         <img class="bRect4" src="blackrect.png" alt="Rectangle" width="60px" height="200px">
       </div>
@@ -973,11 +983,13 @@
         <div>
           <p class="note">Don't Scroll Down</p>
         </div>
+        <!--Leads to my bigger/full portfolio site-->
         <div class="buttonPos2">
           <a href="https://kelpstudio.myportfolio.com/" target="_blank">
             <button class="button2">Full Portfolio</button>
           </a>
         </div>
+        <!--Clicking on it opens up mail app with my Waterloo email already typed-->
         <div class="buttonPos3">
           <a href="mailto:k7lu@uwaterloo.ca">
             <button class="button3">Email</button>
@@ -989,6 +1001,7 @@
       <div id="section9">
         <h1 class="text9">Thanks for your interest<br>but there's actually nothing else.</h1>
       </div>
+      <!--Takes you back to the top of the page upon clicking-->
         <div class="buttonPos4">
           <a href="#section0">
             <button class="button4">Back to Top</button>
