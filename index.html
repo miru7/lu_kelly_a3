@@ -8,7 +8,11 @@
       * {
         box-sizing: border-box;
       }
-      
+      table {
+        position: relative;
+        float: right;
+        color: #868585;        
+      }
       /*
       Code copied from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
       Author: w3schools.com
@@ -680,6 +684,10 @@
       <!--full screen navigation overlay-->
       <div id="myNav" class="overlay">
         <span style="font-size:20px;cursor:pointer" onclick="openNav()">Menu</span>
+        <table>
+          <th>Instagram</th>
+          <th>LinkedIn</th>
+        </table>
         <a href="javascript:void(0)" class="closebtn" style="display:none;" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#section3">Visual Art</a>
